@@ -1,0 +1,28 @@
+Para agregar la configuracion del usuario en git
+    git config --global user.name "Dextroxitohero"
+    git config --global user.emal "dextroxitohero@gmail.com"
+
+Para  ver el usuario o el correo global
+    git config user.name
+    git config user.email
+
+Para iniciar a usar git en un proyecto
+    git init
+
+Para agregar archivos al staging area 
+    git add "nombre del archivo"
+
+Para checar el status de los archivos 
+    git status
+
+Para para pasar archivos al repositorio
+    git commit
+
+Para checar el el historial de repositorio es con log
+    git log
+
+Para quitar los cambios hechos en el working directory y dejar como estan los archivos en el repositorio
+    git checkout -- "Nombre del archivo"
+
+Para checar las diferencias entre un archivo del working directory y el repositorio
+    gif diff "Nombre del archivo"
