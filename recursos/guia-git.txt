@@ -16,7 +16,7 @@ Para checar el status de los archivos
     git status
 
 Para para pasar archivos al repositorio
-    git commit
+    git commit -m "Mensaje del commit"
 
 Para checar el el historial de repositorio es con log
     git log
