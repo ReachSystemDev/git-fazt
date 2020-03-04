@@ -12,6 +12,9 @@ Para iniciar a usar git en un proyecto
 Para agregar archivos al staging area 
     git add "nombre del archivo"
 
+Para quitar un archivo de staging area 
+    git restore --staged "nombre del archivo"
+
 Para checar el status de los archivos 
     git status
 
@@ -43,7 +46,7 @@ Para agregar archivos a servidores remotos
         git remote add origin https://github.com/ReachSystemDev/Templates.git
 
 Para subir los archivos al servidor
-    git push -u origin master
+    git push -u origin "rama a actualizar"
 
 
 
