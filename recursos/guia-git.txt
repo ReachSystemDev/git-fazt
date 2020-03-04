@@ -27,6 +27,15 @@ Para quitar los cambios hechos en el working directory y dejar como estan los ar
 Para checar las diferencias entre un archivo del working directory y el repositorio
     gif diff "Nombre del archivo"
 
+Para agregar nuevas ramas 
+    git branch "Nombre de la rama"
+
+Para checar las ramas que tiene el repositorio
+    git branch
+
+Para cambiarse de rama 
+    git checout "Nombre de la rama"
+
 Para agregar archivos a servidores remotos 
     git remote add origin "link de servidor remoto" 
 
