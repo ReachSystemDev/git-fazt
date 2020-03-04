@@ -26,3 +26,15 @@ Para quitar los cambios hechos en el working directory y dejar como estan los ar
 
 Para checar las diferencias entre un archivo del working directory y el repositorio
     gif diff "Nombre del archivo"
+
+Para agregar archivos a servidores remotos 
+    git remote add origin "link de servidor remoto" 
+
+    example
+        git remote add origin https://github.com/ReachSystemDev/Templates.git
+
+Para subir los archivos al servidor
+    git push -u origin master
+
+
+
