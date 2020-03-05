@@ -49,6 +49,9 @@ Para agregar un servidor remoto
 Para ver los servidores remotos 
     git remote -v
 
+Para renombrar un servidor remoto 
+    git remoto rename "nombre actual"  "nombre nuevo"
+
 Para quitar servidores remotos 
     git remote rm "Nombre del servidor"
 
