@@ -82,8 +82,7 @@ Para regresar a un version determinada y quitar todos los commit posteriores y a
 Para quitar elementos del repositorio definitivamente excepto del working directory  
     git reset --hard || git reset --hard "numero de commit"
 
-Cuando un repositorio ya existe y vas agregar un repo diferente 
-    git pull "Nombre del repositorio" "Rama" --allow-unrelated-histories
-
 Para bajar los ultimos cambios del server remoto
- git pull
+
+    git pull "Nombre del repositorio" "Rama" --allow-unrelated-histories
+    git pull
