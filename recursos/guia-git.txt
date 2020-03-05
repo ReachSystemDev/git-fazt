@@ -84,3 +84,6 @@ Para quitar elementos del repositorio definitivamente excepto del working direct
 
 Cuando un repositorio ya existe y vas agregar un repo diferente 
     git pull "Nombre del repositorio" "Rama" --allow-unrelated-histories
+
+Para bajar los ultimos cambios del server remoto
+ git pull
