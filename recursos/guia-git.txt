@@ -28,7 +28,7 @@ Para quitar los cambios hechos en el working directory y dejar como estan los ar
     git checkout -- "Nombre del archivo"
 
 Para checar las diferencias entre un archivo del working directory y el repositorio
-    gif diff "Nombre del archivo"
+    gif diff "Nombre del archivo" || git diff "numero de commit" || git diff [nombre de la version] vs [nombre de la version]
 
 Para agregar nuevas ramas 
     git branch "Nombre de la rama"
@@ -39,14 +39,45 @@ Para checar las ramas que tiene el repositorio
 Para cambiarse de rama 
     git checout "Nombre de la rama"
 
-Para agregar archivos a servidores remotos 
-    git remote add origin "link de servidor remoto" 
+Para agregar un servidor remoto 
+    git remote add "Nombre del servidor git " "link de servidor remoto" 
 
     example
         git remote add origin https://github.com/ReachSystemDev/Templates.git
+        git remote add flotaCytibus git@192.168.1.7:/home/server/flotaCytibus
 
-Para subir los archivos al servidor
-    git push -u origin "rama a actualizar"
+Para ver los servidores remotos 
+    git remote -v
 
+Para quitar servidores remotos 
+    git remote rm "Nombre del servidor"
 
+Para subir los archivos al servidor la opcion de -u se recomienda solo para la primera vez
+    git push -u "nombre del servidor git" "rama a actualizar"
 
+    example
+    git push flotaCytibus master
+
+Para agregar un tag 
+    git tag -a "version" -m "Mensaje del tag"
+
+Para quitar tags 
+    git tag -d "version del tag"
+
+Para ver todos los tags
+    git tag -l
+
+Para renombrar un tag 
+    git tag -f -a "Version" -m "Mensaje"
+
+Para regresar a un version determinada y quitar todos los commit posteriores y agregandolos al  stage
+    git reset --soft "numero de commit"
+
+Para regresar a un version determinada y quitar todos los commit posteriores y agregandolos al working stage
+    git reset --mixed "numero de commit"
+
+Para quitar elementos del repositorio definitivamente excepto del working directory  
+    git reset --hard || git reset --hard "numero de commit"
+
+Cuando un repositorio ya existe y vas agregar un repo diferente 
+    git pull "Nombre del repositorio" "Rama" --allow-unrelated-histories
